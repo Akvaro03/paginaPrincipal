@@ -1,90 +1,110 @@
-body{
+body {
     background: black;
     color: #f5f5f7;
     font-family: 'Montserrat', sans-serif;
 }
-nav{
+
+nav {
     width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 3fr 2fr;
     align-items: center;
     padding: 10px 0;
-    border-bottom: 1px solid rgb(160, 153, 153) ;
+    border-bottom: 1px solid rgb(160, 153, 153);
 }
 
-.textCenter{
+.textCenter {
     width: 50%;
     margin: auto;
     text-align: center;
 }
-.titulo{
+
+#titulo {
+    font-size: 22px;
+}
+
+.titulo {
     padding-left: 20px;
 }
-#icon{
+
+#icon {
     color: white;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     color: grey;
 }
-nav a:hover{
+
+nav a:hover {
     color: #f5f5f7;
     transition: 2s;
     border-bottom: 1px solid #f5f5f7;
 }
 
-#volver{
+#volver {
     grid-column-start: 4;
 }
 
-.presentacion{
+.presentacion {
     border-bottom: 1px solid black;
     padding-top: 40px;
+    padding-bottom: 60px;
 }
 
-.presentacion .presentacionTitulo{
+.presentacion .presentacionTitulo {
     font-size: 20px;
     color: #adadb3;
 }
 
-.eslogan{
+.eslogan {
     font-size: 40px;
 }
 
-.img-estacion{
+.img-estacion {
     width: 60%;
 }
 
-.texto{
+.texto {
     width: 75%;
     margin: auto;
+    font-size: 17px;
 }
-.presentacionProducto{
+
+.presentacionProducto {
     text-align: justify;
     color: #6e6e73;
 }
 
-.card{
+.card {
     padding-top: 120px;
+    padding-bottom: 120px;
 }
 
-.confiableTitulo{
+hr {
+    color: white;
+    width: 60%;
+}
+
+.confiableTitulo {
     font-size: 45px;
 }
-.confiableDiv{
+
+.confiableDiv {
     padding-top: 30px;
 }
 
-.text-confiable{
+.text-confiable {
     color: #6e6e73;
     width: 70%;
     padding-top: 18px;
 }
-.card div p:nth-child(2) { 
+
+.card div p:nth-child(2) {
     width: 100%;
 }
 
-.resaltado{
+.resaltado {
     color: #f5f5f7;
 }
