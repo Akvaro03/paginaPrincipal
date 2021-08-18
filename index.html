@@ -2,72 +2,88 @@
 <html lang="en">
 
 <head>
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="/img/icon3.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klimarios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 
 <body>
-    <nav class="">
-        <i class="fas fa-cloud-sun fa-4x" id="icon"></i>
-        <a href="#" id="titulo">Klimarios</a>
-        <a href="#" id="volver">Volver a la pagina de inicio</a>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
+        <div class="container">
+            <a class="navbar-brand" href="#!"><span style="color: #5e9693;">Kli</span><span style="color: #fff;">marios</span></a>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!">Offer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!">Reference</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#!">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#!">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#!">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <div class="container">
-        <div class="presentacion">
-            <p class="presentacionTitulo textCenter">Klimarios</p>
-            <p class="eslogan textCenter">Confiable, Exacta y Barata</p>
-            <div class="img textCenter">
-                <img src="fotos/estacion1.png" alt="" class="img-estacion textCenter">
-            </div>
-            <div class="texto">
-                <p class="presentacionProducto">Con este producto vas a poder tener una <span class="resaltado">buena medicion del tiempo con un excelente precio</span>, ya no vas a tener que mojarte porque no sabias que iba a llover.</p>
-            </div>
+
+    <section>
+        <!-- Intro -->
+        <div id="intro" class="bg-image vh-100" style="
+              background-image: url('fondo.jpg'); background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;">
+            <span id="titulo"><span style="color: #5e9693;">Kli</span><span style="color: #fff;">marios</span></span>
         </div>
-
-        <hr>
-
-        <div class="card" id="confiable">
-            <p class="confiableTitulo textCenter">Confiable</p>
-            <div class="confiableDiv">
-                <p class="text-confiable textCenter">Tiene un nivel de <span class="resaltado">precision</span> muy bueno y que <span class="resaltado">no falla</span> gracias a sus sensores de buena calidad. <br> </p>
-                <p class="text-confiable textCenter ">Cuenta con sensores de <span class="resaltado">humedad, temperatura, direccion del viento, intencidad del viento y la sensacion termica</span>.</p>
-                <p class="text-confiable textCenter ">Todos estos datos son <span class="resaltado">en tiempo real y en su misma ubicacion</span>, no son generales como uno ve en la TV</p>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="card" id="confiable">
-            <p class="confiableTitulo textCenter">Confiable</p>
-            <div class="confiableDiv">
-                <p class="text-confiable textCenter">Tiene un nivel de <span class="resaltado">precision</span> muy bueno y que <span class="resaltado">no falla</span> gracias a sus sensores de buena calidad. <br> </p>
-                <p class="text-confiable textCenter ">Cuenta con sensores de <span class="resaltado">humedad, temperatura, direccion del viento, intencidad del viento y la sensacion termica</span>.</p>
-                <p class="text-confiable textCenter ">Todos estos datos son <span class="resaltado">en tiempo real y en su misma ubicacion</span>, no son generales como uno ve en la TV</p>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="card" id="confiable">
-            <p class="confiableTitulo textCenter">Confiable</p>
-            <div class="confiableDiv">
-                <p class="text-confiable textCenter">Tiene un nivel de <span class="resaltado">precision</span> muy bueno y que <span class="resaltado">no falla</span> gracias a sus sensores de buena calidad. <br> </p>
-                <p class="text-confiable textCenter ">Cuenta con sensores de <span class="resaltado">humedad, temperatura, direccion del viento, intencidad del viento y la sensacion termica</span>.</p>
-                <p class="text-confiable textCenter ">Todos estos datos son <span class="resaltado">en tiempo real y en su misma ubicacion</span>, no son generales como uno ve en la TV</p>
-            </div>
-        </div>
+        <!-- Intro -->
+    </section>
+    <div class="container2">
+        <P>Klimarios</P>
+        <p>Es un producto economico y fiable para saber el clima en tiempo real, te sirve para saber el clima real en tu casa </p>
+        <p>Nuestro eslogan es "Una estación meteorológica para todos", ya que las estaciones meteorologicas son muy caras, en cambio la nuestra es asequible para todas las casas</p>
 
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,110 +1,51 @@
-body {
-    background: black;
-    color: #f5f5f7;
-    font-family: 'Montserrat', sans-serif;
+/* Color of the links BEFORE scroll */
+
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+    color: #fff;
 }
 
-nav {
-    width: 90%;
-    margin: auto;
+
+/* Color of the links AFTER scroll */
+
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+    color: #fff;
+}
+
+
+/* Color of the navbar AFTER scroll */
+
+.navbar-scroll,
+.navbar-scrolled {
+    background-color: #cbbcb1;
+}
+
+.mask-custom {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, .15);
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+    letter-spacing: 3px;
+}
+
+.container {
+    padding-left: 50px;
+}
+
+#intro {
     display: grid;
-    grid-template-columns: 1fr 1fr 3fr 2fr;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid rgb(160, 153, 153);
-}
-
-.textCenter {
-    width: 50%;
-    margin: auto;
-    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 5fr 1fr 1fr 14fr;
+    justify-items: center;
 }
 
 #titulo {
-    font-size: 22px;
-}
-
-.titulo {
-    padding-left: 20px;
-}
-
-#icon {
-    color: white;
-}
-
-nav a {
-    text-decoration: none;
-    color: grey;
-}
-
-nav a:hover {
-    color: #f5f5f7;
-    transition: 2s;
-    border-bottom: 1px solid #f5f5f7;
-}
-
-#volver {
-    grid-column-start: 4;
-}
-
-.presentacion {
-    border-bottom: 1px solid black;
-    padding-top: 40px;
-    padding-bottom: 60px;
-}
-
-.presentacion .presentacionTitulo {
-    font-size: 20px;
-    color: #adadb3;
-}
-
-.eslogan {
-    font-size: 40px;
-}
-
-.img-estacion {
-    width: 60%;
-}
-
-.texto {
-    width: 75%;
-    margin: auto;
-    font-size: 17px;
-}
-
-.presentacionProducto {
-    text-align: justify;
-    color: #6e6e73;
-}
-
-.card {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
-hr {
-    color: white;
-    width: 60%;
-}
-
-.confiableTitulo {
-    font-size: 45px;
-}
-
-.confiableDiv {
-    padding-top: 30px;
-}
-
-.text-confiable {
-    color: #6e6e73;
-    width: 70%;
-    padding-top: 18px;
-}
-
-.card div p:nth-child(2) {
-    width: 100%;
-}
-
-.resaltado {
-    color: #f5f5f7;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-size: 70px;
 }
