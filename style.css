@@ -24,8 +24,8 @@
 }
 
 .mask-custom {
-    backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(1px);
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 .navbar-brand {
@@ -48,4 +48,51 @@
     grid-column-start: 2;
     grid-row-start: 2;
     font-size: 70px;
+    border-radius: 15px;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-right: 10px;
+    backdrop-filter: opacity(20%);
+}
+
+li:hover {
+    border-bottom: 1px solid white;
+}
+
+
+/* div de informacion */
+
+.container2 {
+    /* margin: auto;
+    margin-top: 15px;
+    height: 800px; */
+    height: 100vh;
+    backdrop-filter: blur(1px);
+    background-color: #5E976E;
+}
+
+.contenido {
+    width: 90%;
+    margin: auto;
+}
+
+.content-titulo {
+    background: rgba(0, 154, 155);
+    border-radius: 55px;
+    display: flex;
+}
+
+.titulo2 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 50px;
+    color: #eff3f8;
+}
+
+.subtitulo2 {
+    color: #becde3;
+}
+
+hr {
+    border-bottom: 4px solid #33b1ff;
 }
