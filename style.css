@@ -24,8 +24,9 @@
 }
 
 .mask-custom {
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(9px);
     background-color: rgba(255, 255, 255, 0.15);
+    transition: all 0.9s ease;
 }
 
 .navbar-brand {
@@ -62,13 +63,16 @@ li:hover {
 
 /* div de informacion */
 
-.container2 {
+.card {
     /* margin: auto;
     margin-top: 15px;
     height: 800px; */
-    height: 100vh;
     backdrop-filter: blur(1px);
-    background-color: #5E976E;
+    background-color: #fafafa;
+    width: 90%;
+    margin: auto;
+    border: 0;
+    padding-bottom: 135px;
 }
 
 .contenido {
@@ -77,22 +81,81 @@ li:hover {
 }
 
 .content-titulo {
-    background: rgba(0, 154, 155);
-    border-radius: 55px;
-    display: flex;
+    display: grid;
+    margin-top: 7px;
 }
 
 .titulo2 {
     text-align: center;
-    padding-top: 20px;
-    font-size: 50px;
-    color: #eff3f8;
+    padding-top: 75px;
+    padding-bottom: 5px;
+    font-size: 32px;
+    color: #212529;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 .subtitulo2 {
-    color: #becde3;
+    color: #3f474e;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
 }
 
-hr {
-    border-bottom: 4px solid #33b1ff;
+hr {}
+
+.cardHr {
+    border-bottom: 4px solid #000000;
+    width: 22%;
+    opacity: 1;
+    margin: 0;
+    align-self: center;
+    margin-bottom: 50px;
+}
+
+.fondo {
+    background-color: #000000;
+    transition: all 0.9s ease;
+}
+
+.letras {
+    color: rgb(146, 146, 146) !important;
+}
+
+.contenedor {
+    padding-top: 50px;
+}
+
+.escuela {
+    width: 55%;
+    align-self: center;
+}
+
+#institucion {
+    height: 450px;
+    background: linear-gradient(#000000ee, #3d3d3dcb), url('IMG_0203.jpg') center no-repeat;
+    /* background-image: url('IMG_0203.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px); */
+    border-radius: 15px;
+}
+
+#titulo2Institucion {
+    color: white;
+}
+
+.subtitulo3 {
+    color: rgb(158, 158, 158);
+}
+
+.contenido2 {
+    width: 90%;
+    margin: auto;
+}
+
+@media (max-width: 800px) {
+    .mask-custom {
+        backdrop-filter: blur(13px);
+    }
 }

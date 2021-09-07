@@ -9,41 +9,44 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <script src="https://unpkg.com/scrollreveal"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0   ">
         <div class="container">
             <a class="navbar-brand" href="#!"><span style="color: #5e9693;">Kli</span><span style="color: #fff;">marios</span></a>
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#ofrecemos">Que ofrecemos?</a>
+                        <a class="nav-link black" href="#ofrecemos">Que ofrecemos?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#!">Comprar</a>
+                        <a class="nav-link black" href="#!">Comprar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#!">Institucion</a>
+                        <a class="nav-link black" href="#!">Institucion</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#!">Correo</a>
+                        <a class="nav-link black" href="#!">Correo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#!">About</a>
+                        <a class="nav-link black" href="#!">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#!">Team</a>
+                        <a class="nav-link black" href="#!">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#!">Contact</a>
+                        <a class="nav-link black" href="#!">Contact</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav d-flex flex-row">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item me-3 me-lg-0">
                         <a class="nav-link" href="#!">
                             <i class="fas fa-shopping-cart"></i>
@@ -64,7 +67,9 @@
         </div>
     </nav>
 
-    <section>
+
+
+    <section class="section">
         <!-- Intro -->
         <div id="intro" class=" vh-100" style="
               background-image: url('fondo.jpg'); background-position: center center;
@@ -75,20 +80,40 @@
         </div>
         <!-- Intro -->
     </section>
-    <div class="container2 " id="ofrecemos">
-        <div class="contenido">
-            <div class="content-titulo">
-                <P class="titulo2">Ve la temperatura real siempre, sin generalidades</P>
+    <div class="contenedor">
+        <div class="cards">
+            <div class="card" id="ofrecemos">
+                <div class="content-titulo">
+                    <P class="titulo2">Ve la temperatura real siempre, sin generalidades</P>
+                </div>
+                <hr class="cardHr">
+                <p class="subtitulo2">Es un producto <span style="color: #975E61">económico y fiable</span> para saber el clima en tiempo real, te sirve para saber el clima real en tu casa </p>
+                <p class="subtitulo2">Nuestro eslogan es <span style="color: #975E61">"Una estación meteorológica para todos"</span>, ya que las estaciones meteorológicas son muy caras, en cambio la nuestra es asequible para todas las casas</p>
+
             </div>
-            <hr>
-            <hr>
-            <p class="subtitulo2">Es un producto <span style="color: #975E61">economico y fiable</span> para saber el clima en tiempo real, te sirve para saber el clima real en tu casa </p>
-            <p class="subtitulo2">Nuestro eslogan es <span style="color: #975E61">"Una estación meteorológica para todos"</span>, ya que las estaciones meteorologicas son muy caras, en cambio la nuestra es asequible para todas las casas</p>
-            <img src="estacion" alt="">
+            <div class="card" id="institucion">
+                <div class="content-titulo">
+                    <P class="titulo2" id="titulo2Institucion">Institución San Jose</P>
+                </div>
+                <hr class="cardHr">
+                <div class="contenido2">
+                    <p class="subtitulo3">Es un colegio que cuenta con primaria, secundaria, nivel inicial, nivel superior, primaria para adultos y secundaria para adultos</p>
+                    <p class="subtitulo3">Nosotros nos encontramos en una especializacion de informatica, en la que tenemos que realizar un proyecto de arduino, asi nacion climarios</p>
+                </div>
+                <!-- <img src="Aerea2.jpg" alt="" class="escuela"> -->
+            </div>
+
         </div>
+
     </div>
+
     <script src="anime-master/lib/anime.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="scrollspy.js"></script>
+
     <script src="script.js"></script>
 </body>
 
