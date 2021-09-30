@@ -31,11 +31,11 @@
 
 .navbar-brand {
     font-size: 1.75rem;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
 }
 
 .container {
-    padding-left: 50px;
+    padding-left: 100px;
 }
 
 #intro {
@@ -58,6 +58,7 @@
 
 li:hover {
     border-bottom: 1px solid white;
+    transition: all 0.4s ease-in-out;
 }
 
 
@@ -101,7 +102,6 @@ li:hover {
     font-family: 'Poppins', sans-serif;
 }
 
-hr {}
 
 .cardHr {
     border-bottom: 4px solid #000000;
@@ -132,13 +132,15 @@ hr {}
 
 #institucion {
     height: 450px;
-    background: linear-gradient(#000000ee, #3d3d3dcb), url('IMG_0203.jpg') center no-repeat;
+    background: linear-gradient(#000000c2, #3d3d3dcb), url('IMG_0203.jpg') center no-repeat;
     /* background-image: url('IMG_0203.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(5px); */
     border-radius: 15px;
+    margin-bottom: 135px;
+
 }
 
 #titulo2Institucion {
@@ -152,6 +154,232 @@ hr {}
 .contenido2 {
     width: 90%;
     margin: auto;
+}
+
+.contenido3{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 75px;
+}
+.miniCard{
+    background: linear-gradient(to top, #243B55, #141E30);
+    box-sizing: content-box;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid black
+}
+.foto{
+    height:100%;
+}
+img{
+    height:300px;
+}
+.informacion{
+    color: #cecece;
+}
+.nombre{
+    color: #cecece;
+    font-size: 25px;
+    padding-top: 35px;
+}
+.fa-mobile , .fa-school{
+    color: #7c7c7c;
+}
+i{
+    padding-right: 6px;
+}
+
+
+/* form */
+.content-form{
+    height: 430px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 0 5px;
+    backdrop-filter: blur(7px);
+    box-shadow: 0px 0px 30px 0 black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form{
+    /* display:flex; */
+}
+
+.form__content{
+    padding-top: 10px;
+}
+.label{
+    font-size: 20px;
+    color:black;
+}
+
+
+.campos{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.548);
+    background: none;
+    font-size: 15px;
+}
+
+.campos::placeholder{
+    padding: 0 5px;
+    color: teal;
+}
+
+.campos:focus{
+    border-bottom: 3px solid rgb(2, 172, 172);
+    transition: all 0.9s ease;
+
+}
+
+.titulo__content{
+    background: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 5px;
+}
+
+.titulo-form{
+    text-align: center;
+    padding: 10px 0;
+    color: whitesmoke;
+}
+
+.span{
+    color: teal;
+}
+.botton-div{
+    padding-top: 30px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.button{
+    width: 130px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none; 
+    background: gray; 
+    transition: all 1s; 
+}
+
+.button:hover{
+    animation: bounce 0.8s;
+}
+.email{
+    height: 90px;
+}
+
+
+.card4 {
+    width: 350px;
+    background-color: #efefef;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s
+}
+
+.image img {
+    transition: all 0.3s
+}
+
+.card4:hover .image img {
+    transform: scale(1.5)
+}
+
+.btn {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 22px;
+    font-weight: bold
+}
+
+.idd {
+    font-size: 14px;
+    font-weight: 600
+}
+
+.idd1 {
+    font-size: 12px
+}
+
+.number {
+    font-size: 22px;
+    font-weight: bold
+}
+
+.follow {
+    font-size: 12px;
+    font-weight: 500;
+    color: #3b0c0c
+}
+
+.btn1 {
+    height: 40px;
+    width: 150px;
+    border: none;
+    background-color: #000;
+    color: #aeaeae;
+    font-size: 15px
+}
+
+.text span {
+    font-size: 13px;
+    color: #545454;
+    font-weight: 500
+}
+
+.icons i {
+    font-size: 19px
+}
+
+hr .new1 {
+    border: 1px solid
+}
+
+.join {
+    font-size: 14px;
+    color: #a0a0a0;
+    font-weight: bold
+}
+
+.date {
+    background-color: #ccc
+}
+
+.fotoP{
+    height: 140px;
+}
+@keyframes bounce {
+    0%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+    50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    transform: scaleX(1.2);
+
+}
+
+    100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+}
 }
 
 @media (max-width: 800px) {

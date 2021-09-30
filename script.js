@@ -5,6 +5,11 @@ ScrollReveal().reveal('.subtitulo2', { delay: 850, reset: true });
 ScrollReveal().reveal('.titulo2', { delay: 300, reset: true });
 ScrollReveal().reveal('#institucion', { delay: 500, reset: true });
 
+let test = document.getElementById("miniCard");
+
+// This handler will be executed only once when the cursor
+// moves over the unordered list
+
 
 $('.cards').on('scrollSpy:enter', function() {
     console.log('enter: hola');
