@@ -142,7 +142,6 @@ li:hover {
     margin-bottom: 135px;
 
 }
-
 #titulo2Institucion {
     color: white;
 }
@@ -174,9 +173,25 @@ li:hover {
 .foto{
     height:100%;
 }
-img{
-    height:300px;
+
+#intento {
+    background: linear-gradient(to top, #233f7c,#06111d,#06111d,#06111d ,#233f7c);
+    /* background: rgb(55, 55, 63); */
 }
+
+#divFoto{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+}
+
+#modulo{
+    width: 250px;
+}
+#proyecto{
+    width: 300px;
+}
+
 .informacion{
     color: #cecece;
 }
@@ -386,4 +401,9 @@ hr .new1 {
     .mask-custom {
         backdrop-filter: blur(13px);
     }
+
+    .contenido3{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
 }
