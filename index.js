@@ -1,8 +1,12 @@
-import express from 'express';
-import path from 'path';
+// import express from 'express';
+// import path from 'path';
+const express = require('express');
+const path = require(`path`);
 
 
-import { SMTPClient } from 'emailjs';
+
+
+// import { SMTPClient } from 'emailjs';
 const client = new SMTPClient({
 	user: 'user',
 	password: 'password',
