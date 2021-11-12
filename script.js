@@ -1,9 +1,19 @@
 ScrollReveal().reveal('#titulo', { delay: 100, reset: true });
 ScrollReveal().reveal('#titulo2222', { delay: 300, reset: true });
 ScrollReveal().reveal('.cardHr', { delay: 600, reset: true });
-ScrollReveal().reveal('.subtitulo2', { delay: 850, reset: true });
+ScrollReveal().reveal('.subtitulo2', { delay: 850, reset: true }); 
+ScrollReveal().reveal('#divFoto', { delay: 1100, reset: true }); 
+ScrollReveal().reveal('#divcode', { delay: 1100, reset: true }); 
+ScrollReveal().reveal('#cartas', { delay: 1100, reset: true }); 
 ScrollReveal().reveal('.titulo2', { delay: 300, reset: true });
 ScrollReveal().reveal('#institucion', { delay: 500, reset: true });
+
+ScrollReveal().reveal('.email', { delay: 600, reset: true });
+ScrollReveal().reveal('.asunto', { delay: 950, reset: true });
+ScrollReveal().reveal('.telefono', { delay: 1100, reset: true }); 
+ScrollReveal().reveal('.mensaje', { delay: 1200, reset: true });
+ScrollReveal().reveal('.botton-div', { delay: 1500, reset: true });
+
 
 let test = document.getElementById("miniCard");
 
